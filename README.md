@@ -33,15 +33,17 @@ Cocomix+PCE achieves the best results in the frozen language model setting, demo
 
 ## Training
 
-Use the Notebook [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb). It can be run on Google Colab. Replace all the folder name with your actual folders, else it won't work.
+Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or [Google Colab](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing). Replace all the folder name with your actual folders, else it won't work.
 
 __Important note__: The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
 
-Also, in this project, we used a custom GPT model. Training pipeline from [cocomix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix), you can just use the normal gpt-2 or anything else.
+Also, in this project, we used a custom GPT model trained from this [Colab Notebook](https://colab.research.google.com/drive/1AnYL6hxHiXxc13AcbXh50PbdFkMJrc00?usp=sharing). This pipeline was based on the original [CoComix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix), you can just use the normal gpt-2 or anything else.
 
 ## Inference
 
 We create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) extension_ to interact with the model locally. Load from this repo [Anshler/Cocomix_sd_extension](https://github.com/Anshler/Cocomix_sd_extension)
+
+__Note__: The Training notebook also included a section for Inference, though you still need to modify the code yourself to load the weight from Huggingface.
 
 ## Models
 Model weights are published on Huggingface
