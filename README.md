@@ -33,11 +33,14 @@ Cocomix+PCE achieves the best results in the frozen language model setting, demo
 
 ## Training
 
-Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or [Google Colab](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing). Replace all the folder name with your actual folders, else it won't work.
+Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or [Google Colab](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing). Replace all the folder names with a your valid sources, else it won't work.
 
-__Important note__: The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
+__Important notes__:
+* The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
 
-Also, in this project, we used a custom GPT model trained from this [Colab Notebook](https://colab.research.google.com/drive/1AnYL6hxHiXxc13AcbXh50PbdFkMJrc00?usp=sharing). This pipeline was based on the original [CoComix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix), you can just use the normal gpt-2 or anything else.
+* Also, in this project, we used a custom GPT-2 model trained from this [Colab Notebook](https://colab.research.google.com/drive/1AnYL6hxHiXxc13AcbXh50PbdFkMJrc00?usp=sharing) on the openwebtext dataset. This pipeline was based on the original [CoComix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix).
+
+* For your training you can use the normal gpt-2 or anything else.
 
 ## Inference
 
@@ -46,7 +49,7 @@ We create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-di
 __Note__: The Training notebook also included a section for Inference, though you still need to modify the code yourself to load the weight from Huggingface.
 
 ## Models
-Model weights are published on Huggingface
+Model weights of both our Cocomix and custon GPT-2 model are published on Huggingface
 <a> <img src="https://workable-application-form.s3.amazonaws.com/advanced/production/61557f91d9510741dc62e7f8/c3635b59-a3d2-444a-b636-a9d0061dcdde" style="height: 1em;"></a> [Anshler/clip-cocomix](https://huggingface.co/Anshler/clip-cocomix)
 
 CLIP model used is ViT-L-14
