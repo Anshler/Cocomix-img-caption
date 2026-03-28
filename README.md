@@ -3,7 +3,7 @@
 
 ## Abstract
 
-This thesis investigates the application of [Large Concept Models](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix) (LCMs) to image captioning, a task requiring both visual recognition and linguistic reasoning.
+This thesis investigates the application of [Large Concept Models](https://arxiv.org/abs/2502.08524) (LCMs) to image captioning, a task requiring both visual recognition and linguistic reasoning.
 
 Unlike Transformer-based captioners that optimize token likelihood, LCMs internalize high-dimensional concept representations, enabling richer semantic abstraction. We integrate LCMs into a prefix-based captioning framework and introduce Prefix Concept Extraction (PCE), which converts image embeddings into pseudo-tokens for explicit cross-modal alignment.
 
