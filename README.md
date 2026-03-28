@@ -36,17 +36,15 @@ This model was trained on the [Flickr30k](https://www.kaggle.com/datasets/eeshaw
 | Cocomix      | 0.5847 | 0.4016 | 0.2647 | 0.1737 | 0.2033 | 0.4982 | **0.4660** | 0.8953 |
 | Cocomix+PCE  | **0.6221** | **0.4267** | **0.2822** | **0.1841** | **0.2052** | **0.5060** | 0.4587 | **0.8967** |
 
-Cocomix+PCE achieves the best results in the frozen language model setting, demonstrating the benefit of Prefix Concept Extraction for semantic alignment under constrained training.
+> **Cocomix+PCE achieves the best results** in the frozen language model setting, demonstrating the benefit of Prefix Concept Extraction for semantic alignment under constrained training.
 
 <img src="img/eval.png" alt="Evaluation results" style="width: 100%;">
 
 ## Training
 
-Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or open in Colab.
-
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing)
 
-Replace all the folder names with a your valid sources, else it won't work.
+Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or open in Colab. Replace all the folder names with a your valid sources, else it won't work.
 
 __Important notes__:
 * The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
