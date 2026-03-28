@@ -1,5 +1,11 @@
 # Evaluating Methods For Applying Large Concept Model To Image Captioning 👁️📜🖋️
-[[paper]](paper.pdf) [[zenodo]](https://doi.org/10.5281/zenodo.19276839) [[model]](https://huggingface.co/Anshler/clip-cocomix)
+
+[![Paper](https://img.shields.io/badge/paper-PDF-red?style=flat-square&logo=adobeacrobatreader)](paper.pdf)
+[![Zenodo](https://img.shields.io/badge/zenodo-10.5281%2Fzenodo.19276839-blue?style=flat-square&logo=zenodo)](https://doi.org/10.5281/zenodo.19276839)
+[![HuggingFace](https://img.shields.io/badge/🤗%20model-Anshler%2Fclip--cocomix-yellow?style=flat-square)](https://huggingface.co/Anshler/clip-cocomix)
+[![Dataset](https://img.shields.io/badge/dataset-Flickr30k-orange?style=flat-square&logo=kaggle)](https://www.kaggle.com/datasets/eeshawn/flickr30k)
+
+> **TL;DR** — We apply Large Concept Models to image captioning via a prefix-based framework, outperforming GPT-2 baselines on all major metrics (BLEU, METEOR, ROUGE, CIDEr, BERTScore) under frozen language model training.
 
 ## Abstract
 
@@ -26,10 +32,12 @@ This model was trained on the [Flickr30k](https://www.kaggle.com/datasets/eeshaw
 | Model         | BLEU-1 | BLEU-2 | BLEU-3 | BLEU-4 | METEOR | ROUGE | CIDEr | BERTScore |
 |--------------|--------|--------|--------|--------|--------|-------|-------|-----------|
 | GPT-2        | 0.5245 | 0.3516 | 0.2285 | 0.1460 | 0.1961 | 0.4844 | 0.4384 | 0.8922 |
-| Cocomix      | 0.5847 | 0.4016 | 0.2647 | 0.1737 | 0.2033 | 0.4982 | 0.4660 | 0.8953 |
-| Cocomix+PCE  | 0.6221 | 0.4267 | 0.2822 | 0.1841 | 0.2052 | 0.5060 | 0.4587 | 0.8967 |
+| Cocomix      | 0.5847 | 0.4016 | 0.2647 | 0.1737 | 0.2033 | 0.4982 | **0.4660** | 0.8953 |
+| Cocomix+PCE  | **0.6221** | **0.4267** | **0.2822** | **0.1841** | **0.2052** | **0.5060** | 0.4587 | **0.8967** |
 
-Cocomix+PCE achieves the best results in the frozen language model setting, demonstrating the benefit of Prefix Concept Extraction for semantic alignment and caption quality.
+Cocomix+PCE achieves the best results in the frozen language model setting, demonstrating the benefit of Prefix Concept Extraction for semantic alignment under constrained training.
+
+<img src="img/eval.png" alt="Evaluation results" style="width: 100%;">
 
 ## Training
 
@@ -49,8 +57,9 @@ We create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-di
 __Note__: The Training notebook also included a section for Inference, though you still need to modify the code yourself to load the weight from Huggingface.
 
 ## Models
-Model weights of both our Cocomix and custom GPT-2 model are published on Huggingface
-<a> <img src="https://workable-application-form.s3.amazonaws.com/advanced/production/61557f91d9510741dc62e7f8/c3635b59-a3d2-444a-b636-a9d0061dcdde" style="height: 1em;"></a> [Anshler/clip-cocomix](https://huggingface.co/Anshler/clip-cocomix)
+Model weights of both our Cocomix and custom GPT-2 model are published on Huggingface (frozen LM version)
+
+[![HuggingFace](https://img.shields.io/badge/🤗%20model-Anshler%2Fclip--cocomix-yellow?style=flat-square)](https://huggingface.co/Anshler/clip-cocomix)
 
 CLIP model used is ViT-L-14
 
