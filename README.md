@@ -3,7 +3,11 @@
 
 ## Abstract
 
-This thesis investigates the application of [Large Concept Models](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix) (LCMs) to image captioning, a task requiring both visual recognition and linguistic reasoning. Unlike Transformer-based captioners that optimize token likelihood, LCMs internalize high-dimensional concept representations, enabling richer semantic abstraction. We integrate LCMs into a prefix-based captioning framework and introduce Prefix Concept Extraction (PCE), which converts image embeddings into pseudo-tokens for explicit cross-modal alignment. Experiments on Flickr30k demonstrate that LCM-based captioners consistently outperform GPT-2 baselines under frozen language model training, achieving higher BLEU, METEOR, ROUGE, CIDEr, and BERTScore metrics. While GPT-2 remains competitive when fine-tuned, LCM variants show stronger semantic fidelity and generalization. Finally, we implement the proposed models as an extension for Stable Diffusion WebUI, enabling practical deployment for dataset creation and real-world usage. These findings highlight concept-based modeling as a promising alternative to sequence likelihood optimization in multimodal learning.
+This thesis investigates the application of [Large Concept Models](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix) (LCMs) to image captioning, a task requiring both visual recognition and linguistic reasoning.
+
+Unlike Transformer-based captioners that optimize token likelihood, LCMs internalize high-dimensional concept representations, enabling richer semantic abstraction. We integrate LCMs into a prefix-based captioning framework and introduce Prefix Concept Extraction (PCE), which converts image embeddings into pseudo-tokens for explicit cross-modal alignment.
+
+Experiments on Flickr30k demonstrate that LCM-based captioners consistently outperform GPT-2 baselines under frozen language model training, achieving higher BLEU, METEOR, ROUGE, CIDEr, and BERTScore metrics. While GPT-2 remains competitive when fine-tuned, LCM variants show stronger semantic fidelity and generalization. Finally, we implement the proposed models as an extension for Stable Diffusion WebUI, enabling practical deployment for dataset creation and real-world usage. These findings highlight concept-based modeling as a promising alternative to sequence likelihood optimization in multimodal learning.
 
 ## Architecture
 
