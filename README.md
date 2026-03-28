@@ -67,7 +67,7 @@ CLIP model used is ViT-L-14
 
 ```bibtex
 @misc{huynh2026evaluating,
-  author       = {Minh Huynh, T.},
+  author       = {Huynh, M. T.},
   title        = {Evaluating Methods For Applying Large Concept Model To Image Captioning},
   year         = {2026},
   publisher    = {Zenodo},
