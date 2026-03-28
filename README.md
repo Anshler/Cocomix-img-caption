@@ -1,5 +1,5 @@
 # Evaluating Methods For Applying Large Concept Model To Image Captioning 👁️📜🖋️
-[[paper]](paper.pdf) [[zenodo]]([paper.pdf](https://zenodo.org/records/19276839)) [[model]](https://huggingface.co/Anshler/clip-cocomix)
+[[paper]](paper.pdf) [[zenodo]](https://doi.org/10.5281/zenodo.19276839) [[model]](https://huggingface.co/Anshler/clip-cocomix)
 
 ## Abstract
 
