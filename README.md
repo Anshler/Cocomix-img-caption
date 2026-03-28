@@ -4,6 +4,7 @@
 [![Zenodo](https://img.shields.io/badge/zenodo-10.5281%2Fzenodo.19276839-blue?style=flat-square&logo=zenodo)](https://doi.org/10.5281/zenodo.19276839)
 [![HuggingFace](https://img.shields.io/badge/🤗%20model-Anshler%2Fclip--cocomix-yellow?style=flat-square)](https://huggingface.co/Anshler/clip-cocomix)
 [![Dataset](https://img.shields.io/badge/dataset-Flickr30k-orange?style=flat-square&logo=kaggle)](https://www.kaggle.com/datasets/eeshawn/flickr30k)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kEDfGMac2pzbC3ciEM4v3Yso9IQoirIt?usp=sharing)
 
 > **TL;DR** — We apply Large Concept Models to image captioning via a prefix-based framework, outperforming GPT-2 baselines on all major metrics (BLEU, METEOR, ROUGE, CIDEr, BERTScore) under frozen language model training.
 
@@ -41,7 +42,11 @@ Cocomix+PCE achieves the best results in the frozen language model setting, demo
 
 ## Training
 
-Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or [Google Colab](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing). Replace all the folder names with a your valid sources, else it won't work.
+Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or open in Colab.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing)
+
+Replace all the folder names with a your valid sources, else it won't work.
 
 __Important notes__:
 * The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
@@ -52,9 +57,9 @@ __Important notes__:
 
 ## Inference
 
-We create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) extension_ to interact with the model locally. Load from this repo [Anshler/Cocomix_sd_extension](https://github.com/Anshler/Cocomix_sd_extension)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kEDfGMac2pzbC3ciEM4v3Yso9IQoirIt?usp=sharing)
 
-__Note__: The Training notebook also included a section for Inference, though you still need to modify the code yourself to load the weight from Huggingface.
+We also create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) extension_ to interact with the model locally. Load from this repo [Anshler/Cocomix_sd_extension](https://github.com/Anshler/Cocomix_sd_extension)
 
 ## Models
 Model weights of both our Cocomix and custom GPT-2 model are published on Huggingface (frozen LM version)
