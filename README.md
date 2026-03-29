@@ -40,27 +40,27 @@ This model was trained on the [Flickr30k](https://www.kaggle.com/datasets/eeshaw
 
 <img src="img/eval.png" alt="Evaluation results" style="width: 100%;">
 
-## Training
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing)
-
-Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or open in Colab. Replace all the folder names with a your valid sources, else it won't work.
-
-__Important notes__:
-* The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself.
-
-* Also, in this project, we used a custom GPT-2 model trained from this [Colab Notebook](https://colab.research.google.com/drive/1AnYL6hxHiXxc13AcbXh50PbdFkMJrc00?usp=sharing) on the openwebtext dataset. This pipeline was based on the original [CoComix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix).
-
-* For your training you can use the normal gpt-2 or anything else.
-
 ## Inference
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kEDfGMac2pzbC3ciEM4v3Yso9IQoirIt?usp=sharing)
 
-We also create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) extension_ to interact with the model locally. Load from this repo [Anshler/Cocomix_sd_extension](https://github.com/Anshler/Cocomix_sd_extension)
+We also create a _[Stable diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) extension_ to interact with the model locally. Load the extension from this repo [Anshler/Cocomix_sd_extension](https://github.com/Anshler/Cocomix_sd_extension)
+
+## Training
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N62KynuP-gaE32EVxXn2LwJweqm6OgKL?usp=sharing)
+
+Run [FSB_Capstone_ClipCap.ipynb](FSB_Capstone_ClipCap.ipynb) or open the above Colab Notebook. Replace all the folder names with your valid sources, else it won't work.
+
+__Important notes__:
+* The code is for training the image captioner from scratch, if you want to finetune the current model, try modify the code yourself to load weight from HuggingFace (using the Inference code as reference).
+
+* We trained both our Cocomix and GPT-2 language model from scratch using the openwebtext dataset in this [Colab Notebook](https://colab.research.google.com/drive/1AnYL6hxHiXxc13AcbXh50PbdFkMJrc00?usp=sharing). The pipeline was based on the original [CoComix repo](https://github.com/facebookresearch/RAM/tree/main/projects/cocomix).
+
+* For your image caption training you can use the normal gpt-2 or anything else.
 
 ## Models
-Model weights of both our Cocomix and custom GPT-2 model are published on Huggingface (frozen LM version)
+The weights of our caption models, as well as the corresponding Cocomix and GPT-2 language model are published on HuggingFace (frozen LM version)
 
 [![HuggingFace](https://img.shields.io/badge/🤗%20model-Anshler%2Fclip--cocomix-yellow?style=flat-square)](https://huggingface.co/Anshler/clip-cocomix)
 
